@@ -4,11 +4,11 @@
     {
         static void Main(string[] args)
         {
-            //Introduction();
-            Console.WriteLine(addition(1,2,3));
-            Console.WriteLine(subtraction(8,7,6));   
-            Console.WriteLine(multiply(4,2,5));
-            Console.WriteLine(division(8,2,2));
+            Introduction();
+            Console.WriteLine(Addition(1,2,3));
+            Console.WriteLine(Subtraction(8,7,6));   
+            Console.WriteLine(Multiply(4,2,5));
+            Console.WriteLine(Division(8,2,2));
         }
 
         public static void Introduction()
@@ -24,7 +24,7 @@
             Console.WriteLine($"So you are {name}, {gender}, {age} years old, and your hobby is {hobby}? Nice to meet you!");
         }
 
-        public static int addition(params int[] numbers)
+        public static int Addition(params int[] numbers)
         {
             int total = 0; 
             foreach (int number in numbers)
@@ -34,7 +34,7 @@
             return total;
         }
         
-        public static int subtraction(params int[] numbers)
+        public static int Subtraction(params int[] numbers)
         {
             int total = numbers[0]; 
             foreach (int number in numbers)
@@ -44,7 +44,7 @@
             return total + numbers[0];
         }
         
-        public static int multiply(params int[] numbers)
+        public static int Multiply(params int[] numbers)
         {
             int total = 1; 
             foreach (int number in numbers)
@@ -54,7 +54,7 @@
             return total;
         }
         
-        public static double division(params double[] numbers)
+        public static double Division(params double[] numbers)
         {
             double total = numbers[0]; 
             foreach (double number in numbers)
